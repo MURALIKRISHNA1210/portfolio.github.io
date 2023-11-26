@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Oswald:wght@200;300;500;600&family=Roboto&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Home</title>
+  </head>
+  <body class="body">
+    <nav id="navbar">
+      <ul class="hamburger" onclick="ViewItems()">
+        <div class="line-nav"></div>
+        <div class="line-nav"></div>
+        <div class="line-nav"></div>
+      </ul>
+      <ul class="portfolio-icon">
+        <img
+          src="murali2.jpg"
+          alt="Profle-Photo"
+          srcset=""
+          class="profile-icon"
+        />
+      </ul>
+      <ul class="items" id="items">
+        <li class="list-item" id="Home" onclick="Router('home')">Home</li>
+        <li class="list-item" id="About" onclick="Router('About')">About</li>
+        <li class="list-item" id="Blog" onclick="Router('Blog')">Blog</li>
+        <li class="list-item" id="Contact" onclick="Router('contact')">
+          Contact
+        </li>
+      </ul>
+    </nav>
+    <div class="load"></div>
+    <section class="home">
+      <section class="Home">
+        <div class="video-animation">
+          <video
+            src="./Images/Home-images/smoke_anime.mp4"
+            class="video"
+            autoplay
+            muted
+            loop
+          ></video>
+          <div class="typeanime">
+            <div class="typewriter">
+              <strong class="flex-column">
+                <div class="flex">
+                  <pre class="title" style="display: flex; align-items: center">
+Hi There !</pre>
+                  <img src="./Images/Home-images/wave.png" alt="" class="hand-shake" />
+                </div>
+                <pre
+                  class="title flex"
+                >I'M <pre class="main"> Murali Krishna</pre></pre>
+              </strong>
+              <pre id="typing-text">Machine Learning Engineer</pre>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="murali2.jpg" class="profile-pic" srcset="" />
+        </div>
+        <div class="phone-intro">
+          <pre
+            class="title flex"
+            style="justify-content: center; align-items: center"
+          >Hi There ! <img src="./Images/Home-images/wave.png" alt="" class="hand-shake"></pre>
+
+          <pre
+            class="title flex"
+            style="margin-right: 3rem"
+          > I'M <pre class="main">Murali Krishna</pre> </pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="About">
+      <h2 class="Head">MY RECENT WORKS</h2>
+      <div class="container">
+        <div class="card">
+          <img
+            src="./Images/project-images/gesture recogination.png"
+            alt="card-image"
+            class="card-image"
+          />
+          <div class="project">
+            <h4 class="project-title">Hand Gesture Recognition </h4>
+            <p class="project-description">
+              This project involves computer vision concepts by which we will be achieving the control of keyboard with hand signs
+            </p>
+            <button class="button" onclick="change_page('Blog-gesture')">
+              View Blog
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./Images/project-images/face recogination.png"
+            alt="card-image"
+            class="card-image"
+          />
+          <div class="project">
+            <h4 class="project-title">Real-time Face Recognition</h4>
+            <p class="project-description">
+              This project involves computer vision concepts by which we will be recognize faces and the we can also custimize it based on our requiriments
+            </p>
+            <button
+              class="button"
+              onclick="change_page(`Blog-face-recognition`)">
+              View Code
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media.istockphoto.com/id/538617139/photo/winter-country.webp?s=612x612&w=0&k=20&c=RcvT9j1UxQ0ZRbwIqLm2VCvzIwbLD8fFGcsB9JMumpw="
+            alt="card-image"
+            class="card-image"
+          />
+          <div class="project">
+            <h4 class="project-title">Customer Segmentation</h4>
+            <p class="project-description">
+              Finding interests and trends based on purchasing patterns of
+              Customer behavior
+            </p>
+            <button
+              class="button"
+              onclick="change_page(`https://www.google.com/`)"
+            >
+              View Code
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Blog">
+      <section class="blog-container">
+        <h2>My Coding Blogs</h2>
+        <section class="face-recognition short-note">
+            <h4>Face Recognition using OpenCV and Face Recognition Library</h4>
+            <div class="blog-details">
+              
+              <p>Murali Krishna</p>
+              <b>August 30, 2023</b>
+              <b><img src="./Images/Blog-images/book.png" alt="book" class="blog-book">  4 min read</b>
+            </div>
+            <div class="blog-short-note">
+              This Python code demonstrates a real-time face detection and recognition system using OpenCV and Face Recognition libraries. By analyzing webcam video frames, the program identifies faces and matches them with a reference image. Detected faces are highlighted with rectangles, and if a match is found, the person's name is displayed. If not recognized, 'Unknown' is shown. This project showcases the power of computer vision for real-time applications, with potential uses in security, access control, and personalized interactions.
+            </div>
+            <button class="blog-btn" onclick="blog_router('Blog-face-recognition')">Read More</button>
+        </section>
+        <section class="gesture short-note">
+            <h4>Hand Gesture Recognition using MediaPipe and OpenCV</h4>
+            <div class="blog-details">
+              
+              <p>Murali Krishna</p>
+              <b>August 23, 2023</b>
+              <b><img src="./Images/Blog-images/book.png" alt="book" class="blog-book">  5 min read</b>
+            </div>
+            <div class="blog-short-note">
+              This Python script uses mediapipe and cv2 to track hand gestures through webcam input. It recognizes closed fist and open hand gestures, simulating left and right arrow key presses, respectively. The script offers real-time visual feedback by highlighting landmarks on the webcam feed. User interaction continues until "q" is pressed, demonstrating a basic gesture-based keyboard control concept.
+            </div>
+            <button class="blog-btn" onclick="blog_router('Blog-gesture')">Read More</button>
+        </section>
+      </section>
+      <section class="full-blogs">
+        <section class="Blog-gesture project-blog">
+          <div class="blog-intro">
+            <h1 class="blog-heading">
+              Hand Gesture Recognition using MediaPipe and OpenCV
+            </h1>
+            <p class="blog-description">
+              In the world of computer vision, hand gesture recognition has gained
+              significant attention due to its potential applications in
+              human-computer interaction, virtual reality, gaming, and many more.
+              In this blog post, I will explain one of my Python project that
+              utilizes the MediaPipe library along with OpenCV to perform
+              real-time hand gesture recognition. By analyzing hand landmarks
+              (fingers locations), we'll control keyboard inputs to navigate
+              through the application using hand gestures.
+            </p>
+            <h4 class="blog-sub-heads">Introduction :</h4>
+            <p class="blog-description">
+              Hand gesture recognition involves interpreting and analyzing the
+              position of a person's hand to infer different gestures. This
+              project uses MediaPipe, a popular open-source library developed by
+              Google, and OpenCV, a well-known computer vision library, to achieve
+              this task. By capturing the webcam feed, the code identifies hand
+              landmarks and calculates the distances between specific finger
+              landmarks to recognize gestures like a closed fist or an open palm.
+            </p>
+            <h4 class="blog-sub-heads">Libraies Used :</h4>
+            <p class="blog-description">
+              <strong>MediaPipe : </strong>This library provides pre-trained
+              machine learning models to detect and track various hand and body
+              parts' landmarks. Click here To View
+              <a
+                href="https://developers.google.com/mediapipe"
+                target="_blank"
+                class="doc-link"
+              >
+                MediaPipe Documentation</a
+              >
+            </p>
+            <pre
+              class="command"
+            >pip install mediapipe<button class="copy-cmd" onclick="copy_command(0)"><img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img"></button></pre>
+            <p class="blog-description">
+              <strong>OpenCV :</strong> Open Source Computer Vision Library, which
+              is widely used for computer vision tasks, such as capturing video
+              streams, image processing, and graphical display. Click here To View
+              <a
+                href="https://docs.opencv.org/4.8.0/d6/d00/tutorial_py_root.html"
+                target="_blank"
+                class="doc-link"
+              >
+                OpenCV Documentation</a
+              >
+            </p>
+            <pre
+              class="command"
+            >pip install opencv-python <button class="copy-cmd" onclick="copy_command(1)"><img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img"></button></pre>
+            <p class="blog-description">
+              <strong>Keyboard :</strong> This library provides functionality for
+              controlling and simulating keyboard input. It allows you to automate
+              keyboard actions, such as typing characters, pressing keys, and
+              more. Click here To View
+              <a
+                class="doc-link"
+                href="https://pypi.org/project/keyboard/"
+                target="_blank"
+                >Keyboard Documentation</a
+              >
+            </p>
+            <pre
+              class="command"
+            >pip install keyboard<button class="copy-cmd" onclick="copy_command(2)"><img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img"></button></pre>
+          </div>
+          <div class="Complete-code">
+            <h4 class="blog-sub-heads">The Project Complete Code</h4>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(0)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+  import mediapipe as mp
+  import cv2
+  import keyboard
+  
+  mp_drawing = mp.solutions.drawing_utils
+  mp_hands = mp.solutions.hands
+  
+  cap = cv2.VideoCapture(0)
+  
+  hands = mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5)
+  
+  
+  def distance(point1, point2):
+      return ((point1.x - point2.x) ** 2 + (point1.y - point2.y) ** 2) ** 0.5
+  
+  
+  def fingers_landmarks(hand):
+      thumbpoint1 = hand.landmark[mp_hands.HandLandmark.THUMB_TIP]
+      thumbpoint2 = hand.landmark[mp_hands.HandLandmark.THUMB_IP]
+      thumbpoint3 = hand.landmark[mp_hands.HandLandmark.THUMB_MCP]
+      thumbpoint4 = hand.landmark[mp_hands.HandLandmark.THUMB_CMC]
+      indexpoint1 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP]
+      indexpoint2 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP]
+      indexpoint3 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP]
+      indexpoint4 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP]
+      middlepoint1 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP]
+      middlepoint2 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP]
+      middlepoint3 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP]
+      middlepoint4 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP]
+      ringpoint1 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_TIP]
+      ringpoint2 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_DIP]
+      ringpoint3 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_PIP]
+      ringpoint4 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_MCP]
+      littlepoint1 = hand.landmark[mp_hands.HandLandmark.PINKY_TIP]
+      littlepoint2 = hand.landmark[mp_hands.HandLandmark.PINKY_DIP]
+      littlepoint3 = hand.landmark[mp_hands.HandLandmark.PINKY_PIP]
+      littlepoint4 = hand.landmark[mp_hands.HandLandmark.PINKY_MCP]
+      wrist = hand.landmark[mp_hands.HandLandmark.WRIST]
+      return [
+          thumbpoint1,
+          thumbpoint2,
+          thumbpoint3,
+          thumbpoint4,
+          indexpoint1,
+          indexpoint2,
+          indexpoint3,
+          indexpoint4,
+          middlepoint1,
+          middlepoint2,
+          middlepoint3,
+          middlepoint4,
+          ringpoint1,
+          ringpoint2,
+          ringpoint3,
+          ringpoint4,
+          littlepoint1,
+          littlepoint2,
+          littlepoint3,
+          littlepoint4,
+          wrist,
+      ]
+  
+  
+  def check(list_name, symbol):
+      return (
+          all(
+              [
+                  True if dist <= list_name[i] else False
+                  for i, dist in enumerate(distances)
+              ]
+          )
+          if symbol == "<="
+          else all(
+              [
+                  True if dist >= list_name[i] else False
+                  for i, dist in enumerate(distances)
+              ]
+          )
+      )
+  
+  
+  fist_close = [0.38, 0.25, 0.2, 0.19, 0.2]
+  fist_open = [0.24, 0.39, 0.43, 0.41, 0.35]
+  while True:
+      ret, frame = cap.read()
+      image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+      image = cv2.flip(image, 1)
+      image.flags.writeable = False
+      results = hands.process(image)
+      image.flags.writeable = True
+      image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+  
+      if results.multi_hand_landmarks:
+          for num, hand in enumerate(results.multi_hand_landmarks):
+              mp_drawing.draw_landmarks(image, hand, mp_hands.HAND_CONNECTIONS)
+              fingers = fingers_landmarks(hand)
+              distances = [distance(fingers[20], fingers[i]) for i in range(0, 20, 4)]
+              if check(fist_close, "<="):
+                  keyboard.press("left")
+              elif check(fist_open, ">="):
+                  keyboard.press("right")
+              else:
+                  keyboard.release("right")
+                  keyboard.release("left")
+  
+      cv2.imshow("Hand Tracking", image)
+  
+      if cv2.waitKey(1) == ord("q"):
+          print(image.shape)
+          break
+  
+  cap.release()
+  cv2.destroyAllWindows()              
+                </pre
+              >
+            </div>
+          </div>
+          <h4 class="blog-sub-heads" style="padding-left: 5.1rem">
+            Project Overview
+          </h4>
+          <p class="blog-description">
+            The project consists the following steps :
+          </p>
+          <section class="overview">
+            <p class="blog-description">
+              <b>Import Libraries : </b> Import the required libraries, including
+              MediaPipe, OpenCV, and the keyboard library for simulating
+              keypresses.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(1)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+  <pre class="comments">#  This contains the model that can recognize hand landmarks</pre>
+  import mediapipe as mp 
+  
+  <pre class="comments">#  This is used for video capture and processing</pre>
+  import cv2             
+  
+  <pre class="comments">#  This is used for the keyboard integration</pre>
+  import keyboard        
+        </pre>
+            </div>
+            <p class="blog-description">
+              <b>Initialize Components : </b>Initialize the necessary components
+              like the webcam feed, the MediaPipe hands detection model, and set
+              the detection and tracking confidence levels.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(2)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+          <pre class="comments">#  This is used to draw joining lines through hand landmarks (fingers locations)</pre>
+  mp_drawing = mp.solutions.drawing_utils 
+          <pre class="comments">#  This is used for the identifing the hand landmarks</pre>
+  mp_hands = mp.solutions.hand        
+          <pre class="comments">#  This is object that is required to start VideoCapture to Cam</pre>    
+  cap = cv2.VideoCapture(0)
+          <pre class="comments">#  Initializes an instance of the Hands class from the MediaPipe library</pre>
+  hands = mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5)
+          </pre>
+            </div>
+            <p class="blog-description">
+              <b>Define Functions : </b>Define functions to calculate distances
+              between hand landmarks and to check for specific hand gestures based
+              on calculated distances.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(3)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+          <pre class="comments"># calculates the distance between the hand locations</pre>
+  def distance(point1, point2):
+      return ((point1.x - point2.x) ** 2 + (point1.y - point2.y) ** 2) ** 0.5
+           <pre class="comments"># This are the Hand landmarks values we can get this from <a href="https://developers.google.com/mediapipe" target="_blank">MediaPipe Documentation</a></pre>
+  def fingers_landmarks(hand):
+           thumbpoint1 = hand.landmark[mp_hands.HandLandmark.THUMB_TIP]
+           thumbpoint2 = hand.landmark[mp_hands.HandLandmark.THUMB_IP]
+           thumbpoint3 = hand.landmark[mp_hands.HandLandmark.THUMB_MCP]
+           thumbpoint4 = hand.landmark[mp_hands.HandLandmark.THUMB_CMC]
+           indexpoint1 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP]
+           indexpoint2 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP]
+           indexpoint3 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP]
+           indexpoint4 = hand.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP]
+           middlepoint1 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP]
+           middlepoint2 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP]
+           middlepoint3 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP]
+           middlepoint4 = hand.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP]
+           ringpoint1 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_TIP]
+           ringpoint2 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_DIP]
+           ringpoint3 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_PIP]
+           ringpoint4 = hand.landmark[mp_hands.HandLandmark.RING_FINGER_MCP]
+           littlepoint1 = hand.landmark[mp_hands.HandLandmark.PINKY_TIP]
+           littlepoint2 = hand.landmark[mp_hands.HandLandmark.PINKY_DIP]
+           littlepoint3 = hand.landmark[mp_hands.HandLandmark.PINKY_PIP]
+           littlepoint4 = hand.landmark[mp_hands.HandLandmark.PINKY_MCP]
+           wrist = hand.landmark[mp_hands.HandLandmark.WRIST]
+           return [
+               thumbpoint1,
+               thumbpoint2,
+               thumbpoint3,
+               thumbpoint4,
+               indexpoint1,
+               indexpoint2,
+               indexpoint3,
+               indexpoint4,
+               middlepoint1,
+               middlepoint2,
+               middlepoint3,
+               middlepoint4,
+               ringpoint1,
+               ringpoint2,
+               ringpoint3,
+               ringpoint4,
+               littlepoint1,
+               littlepoint2,
+               littlepoint3,
+               littlepoint4,
+               wrist,
+           ]
+        </pre>
+            </div>
+            <p class="blog-description">
+              <b>Gesture Thresholds : </b>Define threshold values for distances
+              between finger landmarks that correspond to certain gestures. These
+              threshold values will be used to determine whether a gesture is
+              being performed.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(4)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+          <pre class="comments"># We can custimize our own gesture values <br>
+  # I found the values of fist_open and close by exploring various values <br>
+  # Closed fist</pre>
+  fist_close = [0.38,0.25,0.2,0.19,0.2]
+  
+  <pre class="comments"># Opened fist</pre> 
+  fist_open = [0.24,0.39,0.43,0.41,0.35] 
+  </pre>
+            </div>
+            <p class="blog-description">
+              <b>Main Loop : </b> Enter the main loop that captures video frames
+              from the webcam feed, processes them using MediaPipe's hand
+              detection model, and calculates distances between finger landmarks.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(5)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+  while True:
+      <pre class="comments"># Starts the Web Cam</pre>
+      ret, frame = cap.read()
+      <pre class="comments"># By default the image/video is in BGR ( Blue, Green, Red ) we will convert it into RGB ( Red, Green, Blue ) <br>
+      # We do this Because RGB is a Standard format</pre>
+      image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+      <pre class="comments"># By default opencv provides the mirror video , So we Will flip it</pre>
+      image = cv2.flip(image, 1)
+      <pre class="comments"># Releasing the default values of the model</pre>
+      image.flags.writeable = False
+      <pre class="comments"># process the image/video the we captured</pre>
+      results = hands.process(image)
+      <pre class="comments"># Setting of image flags</pre>
+      image.flags.writeable = True
+      <pre class="comments"># Converting Back to BGR</pre>
+      image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+  
+      <pre class="comments"># Obtaining the hand landmarks and joining the landmarks</pre>
+      if results.multi_hand_landmarks:
+      for num, hand in enumerate(results.multi_hand_landmarks):
+          mp_drawing.draw_landmarks(image, hand, mp_hands.HAND_CONNECTIONS)
+          fingers = fingers_landmarks(hand)
+          distances = [distance(fingers[20], fingers[i]) for i in range(0, 20, 4)]
+          </pre>
+            </div>
+            <p class="blog-description">
+              <b>Recognize Gestures : </b>Based on the calculated distances and
+              defined thresholds, recognize gestures such as a closed fist or an
+              open palm. Simulate keyboard inputs (left and right arrow keys)
+              using the keyboard library based on recognized gestures.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(6)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+  def check(list_name, symbol):
+      return (
+          all(
+              [
+                  True if dist <= list_name[i] else False
+                  for i, dist in enumerate(distances)
+              ]
+          )
+          if symbol == "<="
+          else all(
+              [
+                  True if dist >= list_name[i] else False
+                  for i, dist in enumerate(distances)
+              ]
+          )
+      )
+              
+              <pre class="comments">        #  Returns True if the fist is open or close and Simulate the keyboard input</pre>
+          if check(fist_close, "<="):
+          keyboard.press("left")
+      elif check(fist_open, ">="):
+          keyboard.press("right")
+      else:
+          keyboard.release("right")
+          keyboard.release("left")
+          </pre>
+            </div>
+            <p class="blog-description">
+              <b>Display Output : </b>Display the processed video frame with drawn
+              hand landmarks and connections.
+            </p>
+              <img src="./Images/project-images/gesture recogination.png" alt="gesture recognition" class="blog-output">
+            <p class="blog-description">
+              <b>Exit the Application : </b>Allow the user to exit the application
+              by pressing the 'q' key.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(7)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+      <pre class="comments"># Shows the Cam Capture</pre>
+  cv2.imshow('Hand Tracking', image)
+      <pre class="comments"># If Q is pressed then the video capture will stop</pre>
+  if cv2.waitKey(1) == ord('q'):
+  
+  
+      break
+      <pre class="comments"># Releases the cam Capture</pre>
+  cap.release() 
+      <pre class="comments"># Destroys all Windows that are running by opencv</pre>
+  cv2.destroyAllWindows() 
+      </pre>
+            </div>
+          </section>
+        </section>
+          <section class="Blog-face-recognition project-blog">
+          <div class="blog-intro">
+            <h1 class="blog-heading">
+              Real-time Face Recognition using OpenCV and Face Recognition Library
+            </h1>
+            <p class="blog-description">
+              Face recognition technology has become increasingly relevant across
+              various domains, from security systems to personal identification. In
+              this blog post, we'll explore a Python project that leverages the power
+              of OpenCV and the Face Recognition library to build a real-time face
+              recognition system. By analyzing webcam feed data, the system can detect
+              and label known individuals while identifying unknown faces.
+            </p>
+            <h4 class="blog-sub-heads">Introduction :</h4>
+            <p class="blog-description">
+              The goal of this project is to create a real-time face recognition
+              system using the OpenCV library and the Face Recognition library. This
+              system captures video from a webcam, processes the frames to detect
+              faces, and then compares the detected face encodings with known face
+              encodings to determine if the face belongs to a known person. The system
+              annotates the frames with rectangles and labels, indicating the identity
+              of known individuals or marking faces as "Unknown" if no match is found.
+            </p>
+            <h4 class="blog-sub-heads">Libraries Used :</h4>
+            <p class="blog-description">
+              <strong>OpenCV :</strong> Open Source Computer Vision Library, a powerful
+              tool for various computer vision tasks including image and video
+              processing, object detection, and more. Click here to view
+              <a
+                href="https://docs.opencv.org/4.8.0/d6/d00/tutorial_py_root.html"
+                target="_blank"
+                class="doc-link"
+              >
+                OpenCV Documentation</a>.
+            </p>
+            <pre class="command">pip install opencv-python<button class="copy-cmd" onclick="copy_command(0)">  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img"></button>
+            </pre>
+            <p class="blog-description">
+              <strong>Face Recognition :</strong> A Python library specifically designed
+              for face recognition tasks. It provides tools for face detection,
+              face encoding, and face comparison. Click here to view
+              <a
+                href="https://github.com/ageitgey/face_recognition"
+                target="_blank"
+                class="doc-link"
+              >
+                Face Recognition Library</a>.
+            </p>
+            <pre class="command">pip install face_recognition<button class="copy-cmd" onclick="copy_command(1)">
+                <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img">
+              </button>
+            </pre>
+          </div>
+          <div class="Complete-code">
+            <h4 class="blog-sub-heads">The Project Complete Code</h4>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(0)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        import cv2
+        import face_recognition
+        import numpy as np
+        
+        # List of image filenames containing known faces
+        images = ['name.png']
+        
+        # Encode known faces using face_recognition library
+        known_face_encodings = [face_recognition.face_encodings(cv2.imread(image))[0] for image in images]
+        known_faces = [name.split('.')[0] for name in images]
+        
+        # Initialize video capture from webcam
+        cap = cv2.VideoCapture(0)
+        
+        while True:
+            ret, frame = cap.read()
+            resize_frame = cv2.resize(frame, (0, 0), fx=1, fy=1)
+            resize_frame = cv2.cvtColor(resize_frame, cv2.COLOR_BGR2RGB)
+            
+            # Detect new face locations and encodings
+            new_face_locations = face_recognition.face_locations(resize_frame)
+            new_face_encodings = face_recognition.face_encodings(resize_frame, new_face_locations)
+            
+            for face_location, face_encoding in zip(new_face_locations, new_face_encodings):
+                top, right, bottom, left = face_location
+                
+                # Compare face encodings with known face encodings
+                matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+                face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
+                least_distance_index = np.argmin(face_distances)
+                
+                # Annotate the frame based on matching results
+                if matches[least_distance_index]:
+                    cv2.rectangle(resize_frame, (left, top), (right, bottom), (0, 255, 0), 2)
+                    cv2.putText(resize_frame, known_faces[least_distance_index], (left, top - 10),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 1, cv2.LINE_AA)
+                else:
+                    cv2.rectangle(resize_frame, (left, top), (right, bottom), (0, 0, 255), 2)
+                    cv2.putText(resize_frame, 'Unknown', (left, top - 10),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 1, cv2.LINE_AA)
+                
+                # Display annotated frame
+                cv2.imshow('Face Detection', resize_frame)
+                
+                # Exit loop if 'q' key is pressed
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    break
+        
+        # Release video capture and close windows
+        cap.release()
+        cv2.destroyAllWindows()
+              </pre>
+            </div>
+          </div>
+          <h4 class="blog-sub-heads" style="padding-left: 5.1rem">
+            Project Overview
+          </h4>
+          <section class="overview">
+            <p class="blog-description">
+              <b>Import Libraries :</b> Import the necessary libraries, including
+              OpenCV and the Face Recognition library, to prepare for the face
+              recognition project.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(1)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        import cv2
+        import face_recognition
+        import numpy as np
+              </pre>
+            </div>
+            <p class="blog-description">
+              <b>Prepare Known Faces :</b> Load images of known individuals, encode their
+              faces using the Face Recognition library, and store the encodings along
+              with the corresponding names.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(2)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        # List of image filenames containing known faces
+        images = ['name.png']
+        
+        # Encode known faces using face_recognition library
+        known_face_encodings = [face_recognition.face_encodings(cv2.imread(image))[0] for image in images]
+        known_faces = [name.split('.')[0] for name in images]
+              </pre>
+            </div>
+            <p class="blog-description">
+              <b>Initialize Webcam :</b> Start capturing video frames from the webcam and
+              begin the main loop for real-time face recognition.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(3)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        # Initialize video capture from webcam
+        cap = cv2.VideoCapture(0)
+        
+        while True:
+            ret, frame = cap.read()
+              </pre>
+            </div>
+            <p class="blog-description">
+              <b>Process Frames :</b> Resize the captured frame, detect new face
+              locations, and calculate face encodings for these new faces.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(4)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        # Resize the frame and convert to RGB format
+        resize_frame = cv2.resize(frame, (0, 0), fx=1, fy=1)
+        resize_frame = cv2.cvtColor(resize_frame, cv2.COLOR_BGR2RGB)
+        
+        # Detect new face locations and encodings
+        new_face_locations = face_recognition.face_locations(resize_frame)
+        new_face_encodings = face_recognition.face_encodings(resize_frame, new_face_locations)
+              </pre>
+            </div>
+            <p class="blog-description">
+              <b>Recognize Faces :</b> Compare the new face encodings with the known face
+              encodings to identify known individuals. Annotate the frame with
+              rectangles and labels based on the recognition results.
+            </p>
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(5)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        for face_location, face_encoding in zip(new_face_locations, new_face_encodings):
+            top, right, bottom, left = face_location
+            
+            # Compare face encodings with known face encodings
+            matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+            face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
+            least_distance_index = np.argmin(face_distances)
+            
+            # Annotate the frame based on matching results
+            if matches[least_distance_index]:
+                cv2.rectangle(resize_frame, (left, top), (right, bottom), (0, 255, 0), 2)
+                cv2.putText(resize_frame, known_faces[least_distance_index], (left, top - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 1, cv2.LINE_AA)
+            else:
+                cv2.rectangle(resize_frame, (left, top), (right, bottom), (0, 0, 255), 2)
+                cv2.putText(resize_frame, 'Unknown', (left, top - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 1, cv2.LINE_AA)
+              </pre>
+            </div>
+            <p class="blog-description">
+              <b>Display and Exit :</b> Display the annotated frame with recognized faces
+              and labels in real-time. Exit the loop when the 'q' key is pressed,
+              release the video capture, and close all windows.
+            </p>
+            <img src="./Images/project-images/face recogination.png" alt="output" class="blog-output">
+            <div class="code-border">
+              <div class="code-head">
+                <button class="copy-code" onclick="copy_code(6)">
+                  <img src="./Images/Blog-images/copy.png" alt="copy-command" class="copy-img" />
+                </button>
+              </div>
+              <pre class="code">
+        # Display annotated frame
+        cv2.imshow('Face Detection', resize_frame)
+                
+        # Exit loop if 'q' key is pressed
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+        
+        # Release video capture and close windows
+        cap.release()
+        cv2.destroyAllWindows()
+              </pre>
+            </div>
+          </section>
+          <h4 class="blog-sub-heads" style="padding-left: 5.1rem">
+            Conclusion
+          </h4>
+          <p class="blog-description">
+            In this project, we've built a real-time face recognition system using the
+            OpenCV and Face Recognition libraries. The system processes video frames
+            from a webcam, detects faces, and matches them against known faces,
+            enabling the identification of individuals. The annotations on the frames
+            provide visual feedback on the recognition results. This project serves as
+            a foundational implementation for applications like access control,
+            attendance systems, and personalized user experiences.
+          </p>
+          <p class="blog-description">
+            Through this project, we've demonstrated the potential of combining
+            computer vision libraries to create powerful applications. The ability to
+            process and recognize faces in real-time opens doors for various
+            innovative solutions across diverse domains.
+          </p>
+        </section>
+        <section class="common-method">
+          <h2>Alternative Method</h2>
+          <p>If you having problem while running the code I have created an complete enviroment that could have no errors. Follow the steps and run the commands below to execute the code to view the output.</p>
+          <strong class="steps">Step 1 : Download the Complete code from github.<a href="https://github.com/464venkatsai/gesture_recogination_and_keyboard_intergration" id="env" class="doc-link">Click Here Soure Code</a></strong>
+          <div class="command-img-container"><img src="./Images/Blog-images/github-zip.png" alt="Download-github-zipfile" class="common-img"></div>
+          <strong class="steps">Step 2 : Extract the Downloaded vir_env_py folder to a folder</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/save and extract vir_env_py.png" alt="save and extract the vir_env_py folder" class="common-img">
+          </div>
+          <strong class="steps">Step 3 : Open Command Prompt in same folder</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/open cmd.png" alt="save and extract the vir_env_py folder" class="common-img">
+          </div>
+          <strong class="steps">Step 4 : Enter ' Code . ' in command prompt to open vscode</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/open vscode.png" alt="save and extract the vir_env_py folder" class="common-img">
+          </div>
+          <strong class="steps">Step 5 : Install Virtual Enviroment using ' pip '</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/install-virtualenv.png" alt="install-virtualenv" class="common-img">
+          </div>
+          <strong class="steps">Step 6 : Make sure to Maintain Folder structure</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/folder-structure.png" alt="folder-structure" class="common-img">
+          </div>
+          <strong class="steps">Step 7 : Activating The Enviroment </strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/script-activation.png" alt="script-activation" class="common-img">
+          </div>
+          <strong class="steps">Step 8 : Run The python file</strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/run-python-file.png" alt="run-python-file" class="common-img">
+          </div>
+          <strong class="steps">Step 9 : To exit the enviroment </strong>
+          <div class="command-img-container">
+            <img src="./Images/Blog-images/deactivation.png" alt="deactivation" class="common-img">
+          </div>
+          </section>
+          </div>
+      </section>
+    </section>
+    <section class="contact">
+      <section class="Contact">
+        <div class="gradient-border flex-column">
+          <form
+            action="https://formsubmit.co/muralichebrolu2002@gmail.com"
+            method="POST"
+            class="inputs"
+          >
+          <input type="hidden" name="_subject" value="New Visitor !">
+          <input type="hidden" name="_next" value="https://464venkatsai.github.io/portfolio/">
+            <div class="form">
+              <input type="text" name="name" class="input-values" id="name" required />
+              <label class="label-name" for="name">
+                <span class="content-name">Enter name</span>
+              </label>
+            </div>
+            <div class="form">
+              <input type="text" name="email" class="input-values" id="email" required />
+              <label class="label-name" for="email">
+                <span class="content-name">Enter Email</span>
+              </label>
+            </div>
+            <div class="form">
+              <input type="text" name="message" class="input-values" id="message" required />
+              <label class="label-name" for="message">
+                <span class="content-name">Enter Message</span>
+              </label>
+            </div>
+            <button type="submit" class="btn">submit</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h1>Connect with Me</h1>
+          <div class="line"></div>
+          <div class="contact-links">
+            <a href="https://github.com/MURALIKRISHNA1210" target="_blank"
+              ><img
+                width="30"
+                class="img"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/murali-krishna-b4413924a/"
+              target="_blank"
+              ><img
+                width="30"
+                class="img"
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png"
+                alt=""
+            /></a>
+            <a href="https://www.instagram.com/murali__.krishna/" target="_blank"
+              ><img
+                width="30"
+                class="img"
+                src="https://cdn-icons-png.flaticon.com/512/717/717392.png"
+                alt=""
+            /></a>
+            <
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
